@@ -1,1 +1,7 @@
-Using laravel. Just for fun.
+Just for fun
+
+# Server
+PHP+Laravel
+
+# Frontend
+materialize design
