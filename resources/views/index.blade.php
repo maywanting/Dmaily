@@ -13,8 +13,6 @@
     {!! Html::style('css/bootstrap.min.css') !!}
     <!--  Material Dashboard CSS    -->
     {!! Html::style('css/material-dashboard.css') !!}
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    {!! Html::style('css/demo.css') !!}
     <!--     Fonts and icons     -->
     {!! Html::style('css/font-awesome.min.css') !!}
     {!! Html::style('css/font.css') !!}

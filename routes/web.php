@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::group(['prefix' => 'money'], function() {
+    Route::get('/', 'MoneyController@index');
+    Route::get('setting', 'MoneyController@setting');
+});
