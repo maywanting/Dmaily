@@ -11,7 +11,7 @@
     <!-- Bootstrap core CSS     -->
     {!! Html::style('css/bootstrap.min.css') !!}
     <!--  Material Dashboard CSS    -->
-    {!! Html::stype('css/material-dashboard.css') !!}
+    {!! Html::style('css/material-dashboard.css') !!}
     <!--     Fonts and icons     -->
     {!! Html::style('css/font-awesome.min.css') !!}
     {!! Html::style('css/font.css') !!}
@@ -22,27 +22,21 @@
             <div class="logo"> Dmaily </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="active">
-                        <a href="{!! url('money') !!}">
-                            <i class="material-icons">attach money</i>
+                    <li class="active dropdown">
+                        <a href="#">
+                            <i class="material-icons">attach_money</i>
                             <p>Money</p>
                         </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="#">Money Display</a></li>
+                            <li><a href="#">Money Setting</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="main-panel">
             @yield('content')
-           <!-- <nav class="navbar navbar-transparent navbar-absolute">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#"> Money Dashboard </a>
-                    </div>
-                </div>
-            </nav>
-            <div class="content">
-                <div class="container-fluid"> aaaa </div>
-            </div> -->
         </div>
     </div>
 </body>
